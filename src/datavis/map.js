@@ -5,10 +5,9 @@ import dataSet from '../assets/data/NL_testData.csv'
 // changes fill color of areas on mouse over and mouse out,
 // and show the hovered over area as text.
 async function mouseOverHandler(d) {
-    console.log(d.properties.code)		
     d3.select('#map_text').text(d.properties.name)
 }
-function mouseOutHandler(d) {
+function mouseOutHandler() {
     d3.select('#map_text').text('')
 }
 
