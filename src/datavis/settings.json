@@ -3,6 +3,7 @@
 		"targetDiv": "#map_container",
 		// "mapJson": "https://raw.githubusercontent.com/rifani/geojson-political-indonesia/master/IDN_adm_1_province.json",
 		"mapJson": "./assets/maps/NL_GE.json",
+		"mapData": "./assets/data/NL_testData.csv",
 		"svgSize": ["100%", "100%"]
 	},
 	"render": {
