@@ -1,0 +1,211 @@
+$c1: #ffffff;
+$c2: #c1eae8;
+$c3: #00aaa0;
+$c4: #00827b;
+$margins: 6em;
+
+html,
+body {
+	height: 100%;
+	background-color: $c2;
+	margin: 0;
+	font-family: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#map_tools {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: $c3;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 $margins;
+	box-sizing: border-box;
+}
+
+#search_bar {
+	background-color: $c3;
+	padding: 1em 1em 1em 0;
+	display: flex;
+	color: $c1;
+	width: 30%;
+	min-width: 15em;
+	margin: 1em 0;
+}
+
+#search_input {
+	margin-left: 1em;
+	width: 60%;
+}
+
+#map_container {
+	height: 75%;
+	background-color: c1eae8;
+	min-width: 20rem;
+	min-height: 60vh;
+	width: 100%;
+}
+
+.datapoint {
+	cursor: pointer;
+}
+
+.g-datapoints {
+	position: relative;
+	z-index: 1;
+}
+
+.g-map {
+	position: relative;
+	z-index: -1;
+}
+
+header {
+	background-color: $c1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem $margins;
+}
+
+.message {
+	color: $c3;
+	font-weight: bold;
+}
+
+.logo {
+	max-width: 5rem;
+	min-width: 4rem;
+	width: 10%;
+}
+
+#map_footer {
+	background-color: $c1;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 20%;
+	min-height: 9em;
+	min-width: 20rem;
+	width: 100%;
+}
+
+h3,
+i {
+	color: $c3;
+	font-size: 1em;
+}
+
+h3 {
+	margin: 0 0 1em;
+}
+
+.info h3 {
+	margin: 1em 0;
+}
+
+.item-list {
+	font-weight: bold;
+	color: $c1;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+.sub-item-list {
+	font-weight: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1em 0;
+}
+
+.object-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: $margins;
+}
+
+.object-image {
+	width: 10em;
+	height: 10em;
+	object-fit: cover;
+	object-position: center;
+	border: 1px solid $c4;
+	margin: 1em 1em 0 0;
+	cursor: pointer;
+	transition: transform 0.5s;
+	background-color: $c1;
+}
+
+.object-image-list {
+	width: 5em;
+	height: 5em;
+	object-fit: cover;
+	object-position: center;
+	border: 1px solid $c4;
+	margin-left: 1em;
+}
+
+button {
+	border: 1px solid $c4;
+	background-color: $c4;
+	padding: 0.5em;
+	color: $c1;
+	cursor: pointer;
+}
+
+.selected {
+	background-color: $c1;
+	color: $c4;
+	font-weight: bold;
+	cursor: default;
+}
+
+.fa {
+	cursor: pointer;
+}
+
+.list-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: $c4;
+	padding: 1em;
+	margin: 0 0 1em 0;
+	min-width: 15em;
+	width: 47%;
+}
+
+.selected-image {
+	transform: scale(2);
+}
+
+.info {
+	padding: 0 $margins;
+}
+
+.view-buttons button:first-child {
+	margin-right: 1em;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
